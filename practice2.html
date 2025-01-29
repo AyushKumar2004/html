@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-2</title>
+    <style>
+        table,td,th{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <!--pre formatted text-->
+    <pre>
+        this is a pre tag
+        it display the same structure on website
+        as define in doc
+    </pre>
+    <!--inline css in html has highest priority-->
+    <p style="color:red; background-color:aqua; font-weight:800; font-size:25px; font-family:fantasy">this is a paragraph</p>
+    <!--inline block-->
+    <b>This is bold</b><br>
+    <strong>I am strong</strong><br>
+    <i>i am i tag</i><br>
+    <em>i am em tag</em><br>
+    <cite> i am cite</cite><br>
+    <!--small tag-->
+    <p>this is a paragraph and <small>this is a small tag</small></p>
+    <!-- strike through-->
+    <del>ohh it is del</del>
+    <hr>
+    <h1>Not use strike because
+        <pre>
+            This feature is no longer recommended. Though some browsers might still 
+            support it, it may have already been removed from the relevant web 
+            standards, may be in the process of being dropped, or may only be kept for 
+            compatibility purposes. Avoid using it, and update existing code if 
+            possible; see the compatibility table at the bottom of this page to guide 
+            your decision. Be aware that this feature may cease to work at any time.
+        </pre>
+    </h1>
+    <strike>It is strike</strike>
+
+    <!--mark-->
+    <h3>My name is <mark>Ayush Kumar</mark></h3>
+    <!--expression-->
+    <h3>(a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</h3>
+    <!--underline-->
+    <p>This is <u>mistake</u></p>
+
+    <!--nested List-->
+    <h1>nested list</h1>
+    <ul>
+        <li>cricket Leagues</li>
+        <ol>
+            <li>IPL
+                <ul>
+                    <li>RCB</li>
+                    <li>MI</li>
+                    <li>CSK</li>
+                </ul>
+            </li>
+            <li>BBL
+                <ul>
+                    <li>SS</li>
+                    <li>PS</li>
+                    <li>AS</li>
+                </ul>
+            </li>
+        </ol>
+    </ul>
+
+    <!--table-->
+    <h1>Table</h1>
+    <table>
+        <caption>student</caption>
+        <tr>
+            <th>name</th>
+            <th>roll</th>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td>Ayush</td>
+            <td>11</td>
+            <td>delhi</td>
+        </tr>
+        <tr>
+            <td>Aryan</td>
+            <td>21</td>
+            <td>bhopal</td>
+        </tr>
+        <tr>
+            <td>dewa</td>
+            <td>31</td>
+            <td>harda</td>
+        </tr>
+    </table>
+
+    <!--input fields-->
+    <label for="text">text</label>
+    <input type="text" name="text">
+    <!--button-->
+    <label for="button">button</label>
+    <input type="button" value="submit" id="button">
+    <!--checkbox-->
+    <label for="checkbox">Car</label>
+    <input type="checkbox" id="checkbox">
+    <!--color-->
+    <label for="color">color</label>
+    <input type="color" name="color">
+    <!--email-->
+    <label for="email">email</label>
+    <input type="email" id="email">
+    <!--file-->
+    <label for="file">file</label>
+    <input type="file" id="file" accept="pdf">
+    <!--date-->
+    <label for="date">date</label>
+    <input type="date" id="date">
+    <!--datetime local-->
+    <label for="dtime">Date time</label>
+    <input type="datetime-local" id="dtime">
+</body>
+</html>
