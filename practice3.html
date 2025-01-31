@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-3</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            border-collapse:collapse;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>item</caption>
+        <tr>
+            <th>name</th>
+            <th>quantity</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>ball</td>
+            <td>5</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>bat</td>
+            <td>2</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>wicket</td>
+            <td>2</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td colspan="2">total</td>
+            <td>1750</td>
+        </tr>
+    </table>
+    <br>
+    <!--table 2-->
+    <table>
+        <caption style="caption-side:bottom;">colgroup</caption>
+        <colgroup>
+            <col span="2" style="background-color:aqua;">
+            <col>
+            <col span="1" style="background-color:yellow;">
+        </colgroup>
+        <tr>
+            <th>name</th>
+            <th>roll</th>
+            <th>adress</th>
+            <th>phone</th>
+        </tr>
+        <tr>
+            <td>ayush</td>
+            <td>1</td>
+            <td>patna</td>
+            <td>234</td>
+        </tr>
+        <tr>
+            <td>aryan</td>
+            <td>1</td>
+            <td>patna</td>
+            <td>234</td>
+        </tr>
+        <tr>
+            <td>dewal</td>
+            <td>1</td>
+            <td>patna</td>
+            <td>234</td>
+        </tr>
+    </table>
+    <!--table 3 rowspan colspan-->
+    <table>
+        <caption>Row Span</caption>
+        <tr>
+            <th rowspan="2">ABCD</th>
+            <th>ABCD</th>
+            <th>ABCD</th>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td>ABCD</td>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td rowspan="2">ABCD</td>
+            <td>ABCD</td>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td>ABCD</td>
+        </tr>
+    </table>
+    <table>
+        <caption>col Span</caption>
+        <tr>
+            <th colspan="2">ABCD</th>
+            <th>ABCD</th>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td>ABCD</td>
+            <td>ABCD</td>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td colspan="2" >ABCD</td>
+        </tr>
+        <tr>
+            <td>ABCD</td>
+            <td colspan="2">ABCD</td>
+        </tr>
+    </table>
+
+    <!--why no row group-->
+    <table>
+        <caption>rowGroup</caption>
+        <thead>
+            <tr>
+                <th>ABCD</th>
+                <th>ABCD</th>
+                <th>ABCD</th>
+            </tr>
+        </thead>
+        <tbody style="background-color:aqua;">
+            <tr>
+                <td>ABCD</td>
+                <td>ABCD</td>
+                <td>ABCD</td>
+            </tr>
+            <tr>
+                <td>ABCD</td>
+                <td>ABCD</td>
+                <td>ABCD</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>ABCD</td>
+                <td>ABCD</td>
+                <td>ABCD</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--hw1-->
+    <table>
+        <caption>homework-1</caption>
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After eating</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>Two hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 126</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+
+    <!--Homework-2-->
+    <table>
+        <caption>Time Table</caption>
+        <tr>
+            <th rowspan="6">hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+        </tr>
+    </table>
+
+    <!--blockquote tag-->
+    <h2>Blockquote Tag</h2>
+    <blockquote>One day everything happen what you want</blockquote>
+    <h2>Cite tag</h2>
+    <cite>This is cite tag</cite>
+
+    <h2>q tag</h2>
+    <q>this is q tag</q>
+
+    <h2>Address</h2>
+    <address>Mandsaur Mp</address>
+
+    <h2>Abbr tags</h2>
+    <p>
+        Basic Building of Webpage<mark><strong><abbr style="text-decoration:none;"
+        title="HyperText Markup Language">HTML</abbr></strong></mark>
+    </p>
+</body>
+</html>
