@@ -7,8 +7,11 @@
     <style>
         table,th,td{
             border:1px solid black;
-            border-collapse:collapse;
+            /* border-collapse:collapse; */
             text-align:center;
+        }
+        hr{
+            background-color:black;
         }
     </style>
 </head>
@@ -241,5 +244,56 @@
         Basic Building of Webpage<mark><strong><abbr style="text-decoration:none;"
         title="HyperText Markup Language">HTML</abbr></strong></mark>
     </p>
+
+    <!--HOMEWORK TABLE-->
+    <table>
+        <caption>Homework</caption>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">seminar</th>
+        </tr>
+        <tr>
+            <td colspan="2"><strong>Schedule</strong></td>
+            <td rowspan="2"><strong>topic</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Begin</strong></td>
+            <td><strong>End</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.pm.</td>
+            <td>introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity:DTD and relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tueday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td rowspan="3">
+                XPath
+                <hr>
+                XSL transformation
+            </td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m.</td>
+            <td>5:00 p.m.</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+
 </body>
 </html>
